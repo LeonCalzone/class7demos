@@ -25,12 +25,12 @@
             transition: transform 2s ease-in-out, background-color 2s ease-in-out;
             height: 500px;
         }   
-        .fixed-element {
+        .absolute-element {
             display: block;
             position: absolute; /* This makes the element fixed-positioned */
-            top: 50%;
+            top: 40%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /*centering anchor point*/
             background-color: red;
             color: white;
             padding: 10px;
@@ -39,7 +39,7 @@
     </style>
 </head>
 <body>
-    <div class="fixed-element">
+    <div class="absolute-element">
         BIG TEXT
     </div>
     <div class="grid-container">
