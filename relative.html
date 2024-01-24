@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .relative-box {
+            position: relative;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 100px;
+        }
+        .example-text {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Exploring Relative Positioning in CSS</h2>
+        
+        <h3>Example 1: Offset to the Right</h3>
+        <div class="relative-box" style="left: 20px;">
+            Offset 20px to the right
+        </div>
+        <p class="example-text">
+            This box is offset 20 pixels to the right from its normal position.
+        </p>
+
+        <h3>Example 2: Offset Downwards</h3>
+        <div class="relative-box" style="top: 20px;">
+            Offset 20px downwards
+        </div>
+        <p class="example-text">
+            This box is offset 20 pixels downwards from its normal position.
+        </p>
+
+        <h3>Example 3: Negative Offset to the Left</h3>
+        <div class="relative-box" style="left: -20px;">
+            Offset -20px to the left
+        </div>
+        <p class="example-text">
+            This box is offset -20 pixels to the left, demonstrating negative values.
+        </p>
+
+        <h3>Example 4: Combined Offsets</h3>
+        <div class="relative-box" style="top: 30px; left: 30px;">
+            Offset 30px right and 30px down
+        </div>
+        <p class="example-text">
+            This box is offset 30 pixels to the right and 30 pixels downwards.
+        </p>
+
+    </div>
+
+</body>
+</html>

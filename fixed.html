@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Position 1</title>
+    <style>
+        body{
+            
+            margin: 0;
+        
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 1fr; /* Automatically add rows with a height of 1fr */
+            width: 100vw;
+        }
+        .grid-item{
+            background-color: skyblue;
+            border: 1px solid black;
+
+            height: 500px;
+        }   
+        .fixed-element {
+            position: fixed; /* This makes the element fixed-positioned */
+            top: 10px; /* Position from the top of the viewport */
+            left: 10px; /* Position from the left of the viewport */
+            background-color: red;
+            color: white;
+            padding: 10px;
+            font-size: 20px
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-element">
+        This is a fixed-positioned element.
+    </div>
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+    </div>
+</body>
+</html>

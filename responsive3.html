@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 10px;
+}
+
+.item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    height: 200px;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 2fr 1fr; /* Two columns, main content larger */
+    }
+}
+@media (max-width: 501px) {
+    .container {
+        grid-template-columns: 2fr; /* Two columns, main content larger */
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
